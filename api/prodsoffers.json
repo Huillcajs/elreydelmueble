@@ -1,0 +1,54 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "title": "Sofá de Cuero Premium",
+      "description": "Sofá de cuero de alta calidad con asientos acolchonados y estructura de madera resistente.",
+      "quantity": 10,
+      "normal_price": 1200.00,
+      "discount_price": 900.00,
+      "discount_percentage": 25,
+      "image": "assets/img/offers/sofa_premium.webp"
+    },
+    {
+      "id": 2,
+      "title": "Mesa de Comedor Moderna",
+      "description": "Mesa de comedor con acabado en madera de roble y patas de acero negro.",
+      "quantity": 5,
+      "normal_price": 800.00,
+      "discount_price": 600.00,
+      "discount_percentage": 25,
+      "image": "assets/img/offers/mesa_comedor.webp"
+    },
+    {
+      "id": 3,
+      "title": "Lámpara de Pie Elegante",
+      "description": "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente.",
+      "quantity": 15,
+      "normal_price": 200.00,
+      "discount_price": 150.00,
+      "discount_percentage": 25,
+      "image": "assets/img/offers/lampara_pie.webp"
+    },
+    {
+      "id": 4,
+      "title": "Escritorio Minimalista",
+      "description": "Escritorio de diseño moderno con superficie amplia y estructura metálica resistente.",
+      "quantity": 8,
+      "normal_price": 500.00,
+      "discount_price": 375.00,
+      "discount_percentage": 25,
+      "image": "assets/img/offers/escritorio_minimalista.webp"
+    },
+    {
+      "id": 5,
+      "title": "Colchón Ortopédico",
+      "description": "Colchón ortopédico con espuma de alta densidad y tecnología de memoria de forma.",
+      "quantity": 12,
+      "normal_price": 700.00,
+      "discount_price": 525.00,
+      "discount_percentage": 25,
+      "image": "assets/img/offers/colchon_ortopedico.webp"
+    }
+  ]
+}
