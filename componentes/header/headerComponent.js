@@ -2,7 +2,7 @@ class HeaderComponent extends HTMLElement {
   // ESPECIFICAR RUTAS
   rutas = {
     inicio: {nombre: "Inicio", ruta: "index.html"},
-    productos: {nombre: "Productos", ruta: "#"},
+    productos: {nombre: "Productos", ruta: "productos.html"},
     servicios: {nombre: "Servicios", ruta: "#"},
     ubicacion: {nombre: "Ubicación", ruta: "ubicacion.html"},
     fqa: {nombre: "FQA", ruta: "#"},
