@@ -9,6 +9,7 @@
   <script rel="preload" type="module" src="componentes/header/headerComponent.js"></script>
   <script rel="preload" type="module" src="componentes/footer/footerComponent.js"></script>
   <script rel="preload" type="module" src="componentes/cardprod/cardprodComponent.js"></script>
+  <script rel="preload" type="module" src="componentes/cardoffert/cardoffertComponent.js"></script>
 </head>
 <body>
   <header-component></header-component>
@@ -17,23 +18,51 @@
     <!-- Seccion del inicio -->
     <section class="section_offers">
       <article class="offers_slider">
-        <section class="card_offer">
-          <img src="assets/img/offers/sofa_premium.webp" alt="">
-          <article class="offer_info">
-            <span class="offer">50%</span>
-            <div>
-              <h2>Descuento de la semana</h2>
-              <p>Sofá seccional Franklin, tela 4 Piezasssssssssss sssssssssssssss ssssssssss sssssssssssssssssssssssssss</p>
-            </div>
-            <div class="info_others">
-              <div class="offers_prices">
-                <del>S/ 90.00</del>
-                <strong>S/ 10.00</strong>
-              </div>
-              <button>Ver</button>
-            </div>
-          </article>
-        </section>
+        <cardoffer-component
+          titleprod = "Lámpara de Pie Elegante"
+          urlprod = "assets/img/offers/lampara_pie.webp"
+          descriptprod = "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente."
+          priceprodnow = "150.00"
+          priceprodold = "200.00"
+          descprod = "25"
+          idprod = "3"
+        ></cardoffer-component>
+        <cardoffer-component
+          titleprod = "Lámpara de Pie Elegante"
+          urlprod = "assets/img/offers/lampara_pie.webp"
+          descriptprod = "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente."
+          priceprodnow = "150.00"
+          priceprodold = "200.00"
+          descprod = "25"
+          idprod = "3"
+        ></cardoffer-component>
+        <cardoffer-component
+          titleprod = "Lámpara de Pie Elegante"
+          urlprod = "assets/img/offers/lampara_pie.webp"
+          descriptprod = "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente."
+          priceprodnow = "150.00"
+          priceprodold = "200.00"
+          descprod = "25"
+          idprod = "3"
+        ></cardoffer-component>
+        <cardoffer-component
+          titleprod = "Lámpara de Pie Elegante"
+          urlprod = "assets/img/offers/lampara_pie.webp"
+          descriptprod = "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente."
+          priceprodnow = "150.00"
+          priceprodold = "200.00"
+          descprod = "25"
+          idprod = "3"
+        ></cardoffer-component>
+        <cardoffer-component
+          titleprod = "Lámpara de Pie Elegante"
+          urlprod = "assets/img/offers/lampara_pie.webp"
+          descriptprod = "Lámpara de pie con base de mármol y pantalla de lino, ideal para cualquier ambiente."
+          priceprodnow = "150.00"
+          priceprodold = "200.00"
+          descprod = "25"
+          idprod = "3"
+        ></cardoffer-component>
         <button class="slider-button" id="prev">❮</button>
         <button class="slider-button" id="next">❯</button>
       </article>
