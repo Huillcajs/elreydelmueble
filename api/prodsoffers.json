@@ -17,7 +17,7 @@
       "quantity": 5,
       "normal_price": 800.00,
       "discount_price": 600.00,
-      "discount_percentage": 25,
+      "discount_percentage": 35,
       "image": "assets/img/offers/mesa_comedor.webp"
     },
     {
@@ -27,7 +27,7 @@
       "quantity": 15,
       "normal_price": 200.00,
       "discount_price": 150.00,
-      "discount_percentage": 25,
+      "discount_percentage": 15,
       "image": "assets/img/offers/lampara_pie.webp"
     },
     {
@@ -37,7 +37,7 @@
       "quantity": 8,
       "normal_price": 500.00,
       "discount_price": 375.00,
-      "discount_percentage": 25,
+      "discount_percentage": 45,
       "image": "assets/img/offers/escritorio_minimalista.webp"
     },
     {
