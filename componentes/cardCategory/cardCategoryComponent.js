@@ -32,11 +32,28 @@ class CardCategoryComponent extends HTMLElement {
   }
   // AQUI VAN TODAS LAS FUNCIONES JS
   templateJS() {
-    this.showDetails();
+    this.reloadProds();
   }
 
-  showDetails() {
-
+  reloadProds() {
+    const $category = this.shadowRoot.querySelector(".category");
+    $category.addEventListener("click", e => {
+      const $list_prods = document.getElementById("listprods");
+      const $fragment = document.createDocumentFragment();
+      fetch(`https://furniture-api.fly.dev/v1/products?category=${this.nameid}`)
+      .then(rest => rest.json())
+      .then(json => {
+          $list_prods.innerHTML= "";
+          json.data.forEach(({name, image_path, price}) => {
+            const $card = document.createElement("cardprod-component");
+            $card.setAttribute("titleprod", name);
+            $card.setAttribute("urlprod",image_path );
+            $card.setAttribute("priceprod", price);
+            $fragment.appendChild($card);
+          });
+          $list_prods.appendChild($fragment)
+        })
+    })
   }
 }
 
