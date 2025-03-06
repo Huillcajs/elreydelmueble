@@ -93,38 +93,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  overflow: hidden;
   & .list_categorys {
     width: 100%;
   }
 }
 
-.category {
-  cursor: pointer;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
-  & img {
-    width: 100%; 
-    height: inherit;
-    position: absolute;
-    object-fit: cover;
-  }
-  & h3 {
-    width: 100%;
-    margin: 0;
-    z-index: 9;
-    color: var(--color-secondary);
-    text-align: center;
-  }
-  &:hover {
-    height: 6rem;
-  }
-}
+
 
 .prods_cards {
   display: flex;
@@ -137,16 +112,17 @@
   .section_prods {
     grid-template-columns: 100%;
   }
-
   .prods_categorys {
     max-width: 20rem;
     width: 100%;
     margin: 0 auto;
     padding: 0 0.5rem;
+    height: 20rem;
 
     position: sticky;
     top: 4rem;
     background-color: var(--color-secondary);
     z-index: 88;
+    overflow-y: auto;
   }
 }
