@@ -1,0 +1,128 @@
+/* *
+* SECCION DE INICIO PARA MOSTRAR LAS OFERTAS
+* */
+.section_offers {
+  width: 100%;
+  max-height: 40rem;
+  padding: 5rem 0;
+  /* height: 40rem; */
+  background-image: url("/assets/img/fondoproductos.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* * flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *
+* SECCION DE SLIDER DE OFERTAS
+* */
+
+.offers_slider {
+  margin: 1rem 2rem;
+  max-width: 50rem;
+  width: 100%;
+  max-height: 22rem;
+  position: relative;
+  overflow: hidden;
+
+  /* *Flex */
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width:530px) {
+  .offers_slider {
+    max-height: max-content;
+  }
+}
+
+/* *
+* BOTÓN DE SLIDER
+* */
+
+.slider-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* * ESTILOS DE BOTÓNES */
+  border: 0;
+  padding: 2rem 1rem;
+  background-color: var(--color-primary-card);
+  color: var(--color-secondary);
+  transition: all 0.5s ease;
+  z-index: 99;
+  &#prev {
+    left: 0;
+    border-radius: 0 1rem 1rem 0;
+  }
+  &#next {
+    right: 0;
+    border-radius: 1rem 0 0 1rem;
+  }
+  &:hover {
+    padding: 2rem;
+  }
+}
+
+
+/* *
+* SECCIÓN DE LOS PRODUCTOS Y FILTROS
+* */
+
+.section_prods {
+  max-width: 80rem;
+  width: 100%;
+  margin: 3rem auto;
+
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.prods_categorys {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  & .list_categorys {
+    width: 100%;
+  }
+}
+
+
+
+.prods_cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 800px ) {
+  .section_prods {
+    grid-template-columns: 100%;
+  }
+  .prods_categorys {
+    max-width: 20rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    height: 20rem;
+
+    position: sticky;
+    top: 4rem;
+    background-color: var(--color-secondary);
+    z-index: 88;
+    overflow-y: auto;
+  }
+}

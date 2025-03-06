@@ -1,0 +1,27 @@
+.category {
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  & img {
+    width: 100%; 
+    height: inherit;
+    position: absolute;
+    object-fit: cover;
+  }
+  & h3 {
+    width: 100%;
+    margin: 0;
+    z-index: 9;
+    color: var(--color-secondary);
+    text-align: center;
+  }
+  &:hover {
+    height: 6rem;
+  }
+}

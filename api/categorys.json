@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "key": "sofa",
+      "name": "Sofá",
+      "image": "assets/img/categorys/sofas.webp"
+    },
+    {
+      "key": "chair",
+      "name": "Silla",
+      "image": "assets/img/categorys/sillas.webp"
+    },
+    {
+      "key": "stool",
+      "name": "Banco",
+      "image": "assets/img/categorys/taburetes.webp"
+    },
+    {
+      "key": "table",
+      "name": "Mesa",
+      "image": "assets/img/categorys/mesas.webp"
+    },
+    {
+      "key": "desk",
+      "name": "Escritorio",
+      "image": "assets/img/categorys/escritorios.webp"
+    },
+    {
+      "key": "kitchen",
+      "name": "Cocina",
+      "image": "assets/img/categorys/cocinas.webp"
+    },
+    {
+      "key": "vanitory",
+      "name": "Vanitorio",
+      "image": "assets/img/categorys/tocador.webp"
+    },
+    {
+      "key": "matress",
+      "name": "Colchón",
+      "image": "assets/img/categorys/colchon.webp"
+    },
+    {
+      "key": "mirror",
+      "name": "Espejo",
+      "image": "assets/img/categorys/espejos.webp"
+    },
+    {
+      "key": "wardrove",
+      "name": "Guardarropa",
+      "image": "assets/img/categorys/armarios.webp"
+    },
+    {
+      "key": "lamp",
+      "name": "Lámpara",
+      "image": "assets/img/categorys/lamparas.webp"
+    },
+    {
+      "key": "tv table",
+      "name": "Mesa de TV",
+      "image": "assets/img/categorys/mesatv.webp"
+    },
+    {
+      "key": "garden",
+      "name": "Jardín",
+      "image": "assets/img/categorys/jardin.webp"
+    }
+  ]
+}
