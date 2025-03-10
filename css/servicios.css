@@ -1,0 +1,191 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-color: #f5f5f5;
+  }
+  /* Sección Superior */
+  .seccion {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+  }
+  .seccion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #d9c4af; /* Color de la forma curva */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+    z-index: -1;
+  }
+  .seccion-text {
+    max-width: 50%;
+  }
+  .seccion-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .seccion-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555;
+  }
+  .seccion-text button {
+    background-color: #693f2b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seccion-text button:hover {
+    opacity: 0.8;
+  }
+
+  /* Sección "¿Qué ofrecemos?" */
+  .section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 22px;
+  }
+  .offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  .offer-card {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  .offer-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .offer-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .offer-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  /* Sección "Beneficios del servicio" */
+  .benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto 40px;
+  }
+  .benefit-box {
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .benefit-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .benefit-box h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  /* Sección de ofertas */
+  .exclusive-offer {
+    margin: 90px;
+    background: url('assets/img/oferta.png') center/cover no-repeat;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    border-radius: 20px;
+  }
+  .exclusive-offer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .exclusive-offer button {
+    background-color: #693f2b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .exclusive-offer button:hover {
+    opacity: 0.8;
+  }
+
+  /* Modo Mobil */
+  @media (max-width: 767px) {
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero::before {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .hero-text {
+      max-width: 100%;
+    }
+    .offers-container,
+    .benefits-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .offers-container {
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .benefits-container {
+      gap: 20px;
+      margin: 20px 0 40px;
+    }
+    .exclusive-offer {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .offers-container {
+      flex-direction: row;
+    }
+    .benefits-container {
+      flex-direction: row;
+    }
+  }
